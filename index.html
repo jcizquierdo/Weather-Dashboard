@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/iconic-glyphs.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="page-title">
+        <h1 class="title">Weather Dashboard</h1>
+    </div>
+    <!-- container starts -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left container -->
+            <div class="left-container col-4">
+                <div class="search">
+                    <div class="search-title-text">
+                    Search for a City: <br>
+                    </div>
+                    <div class="search-line">
+                        <input class="form-control mr-sm-2" type="text" placeholder="City Name" id="city-search-input">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="city-search-btn" onclick="getCity()">Search</button>
+                    </div>
+                </div>
+                <div class="search-history-display container" id="search-display">
+
+                </div>
+            </div>
+            <!-- right container -->
+            <div class="col-8">
+                <div class= "right-container">
+                    <div class="city-name">
+                        <!-- <img class="current-icon"></img> -->
+                    </div>
+                    <img class="current-icon"></img>
+                    <div class="city-name-date"></div>
+                    <div class="city-info">
+                        <div class="temp">
+                            Temperature: <span id="temp2"></span>°F
+                        </div>
+                        <div class="humidity">
+                            Humidity: <span id="humid"></span>%
+                        </div>
+                        <div class="windspeed">
+                            Wind Speed: <span id="ws"></span> MPH
+                        </div>
+                        <div class="uvindex">
+                            UV Index: <span id="uv"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 day forecast -->
+                <div class="cards">
+                    <div class="forecast">
+                        5-Day Forecast:
+                    </div>
+                    <!-- cards for forecast -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class= "card-date" id="forecast-date1">
+
+                                        </div>
+                                        <span>icon</span>
+                                        <div class="card-temperature">
+                                            Temp: <span id="card-temp1"></span> °F
+                                        </div>
+                                        <div class="card-humidity">
+                                            Humidity: <span id="card-hum1"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class= "card-date"id="forecast-date2">
+
+                                        </div>
+                                        <span>icon</span>
+                                        <div class="card-temperature">
+                                            Temp: <span id="card-temp2"></span> °F
+                                        </div>
+                                        <div class="card-humidity">
+                                            Humidity: <span id="card-hum2"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class= "card-date" id="forecast-date3">
+
+                                        </div>
+                                        <span>icon</span>
+                                        <div class="card-temperature">
+                                            Temp: <span id="card-temp3"></span> °F
+                                        </div>
+                                        <div class="card-humidity">
+                                            Humidity: <span id="card-hum3"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class= "card-date" id="forecast-date4">
+
+                                        </div>
+                                        <span>icon</span>
+                                        <div class="card-temperature">
+                                            Temp: <span id="card-temp4"></span> °F
+                                        </div>
+                                        <div class="card-humidity">
+                                            Humidity: <span id="card-hum4"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class= "card-date" id="forecast-date5">
+
+                                        </div>
+                                        <span>icon</span>
+                                        <div class="card-temperature">
+                                            Temp: <span id="card-temp5"></span> °F
+                                        </div>
+                                        <div class="card-humidity">
+                                            Humidity: <span id="card-hum5"></span>%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end of cards -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

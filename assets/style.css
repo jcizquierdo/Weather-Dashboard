@@ -1,0 +1,100 @@
+.page-title {
+    background-color: rgb(4, 40, 65);
+    text-align: center;
+    height: 80px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+.title {
+    padding-top: 13px;
+}
+
+.left-container {
+    padding-right: 10px;
+    background-color: rgb(235, 232, 232);
+}
+
+.search {
+    padding-left: 15px;
+}
+
+.search-line {
+    display: inline;
+}
+
+.search-title-text {
+    padding-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+}
+
+.history {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right-container {
+    border: solid 1px lightgray;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 20px;
+}
+
+.city-name {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    margin: 20px 20px 10px 30px;
+}
+
+.city-name-date {
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.city-info {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 40px;
+}
+
+.temp {
+    margin: 20px 0px 60px 20px;
+}
+
+.humidity {
+    margin: 20px 0px 60px 20px;
+}
+
+.windspeed {
+    margin: 20px 0px 60px 20px;
+    
+}
+
+.uvindex {
+    margin: 20px 0px 60px 20px;
+}
+
+.forecast {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.card-body {
+    background-color: blue;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 11px;
+}
+
+.card-date {
+    font-size: 15px;
+}
+
+
+
+
+
+/* font-family: 'Manrope', sans-serif;
+font-family: 'Noto Sans', sans-serif; */
