@@ -6,4 +6,4 @@
 
 ### Under the users search input, a search history will be displayed, and the user will be able to navigate through their city search history.
 
-![](assets/images/Weather-Dashboard-pic)
+![](assets/images/Weather-Dashboard-pic.png)
