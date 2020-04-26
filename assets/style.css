@@ -3,7 +3,7 @@
     text-align: center;
     height: 80px;
     font-family: 'Manrope', sans-serif;
-    color: white;
+    color: honeydew;
 }
 
 .title {
@@ -45,34 +45,61 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 40px;
     margin: 20px 20px 10px 30px;
+    color: honeydew;
+}
+
+.city-name-container {
+    margin-top: 30px;
 }
 
 .city-name-date {
     margin-left: 40px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 30px;
+    color: rgb(4, 40, 65);
 }
 
 .city-info {
     font-family: 'Noto Sans', sans-serif;
-    margin-left: 40px;
+    margin-left: 150px;
 }
 
 .temp {
     margin: 20px 0px 60px 20px;
+    font-size: 25px;
+    color: rgb(4, 40, 65);
 }
 
 .humidity {
     margin: 20px 0px 60px 20px;
+    font-size: 25px;
+    color: rgb(4, 40, 65);
 }
 
 .windspeed {
     margin: 20px 0px 60px 20px;
+    font-size: 25px;
+    color: rgb(4, 40, 65);
     
 }
 
 .uvindex {
     margin: 20px 0px 60px 20px;
+    font-size: 25px;
+    color: rgb(4, 40, 65);
+}
+
+.uvBackgroundHigh {
+    background-color: red;
+}
+
+.uvBackgroundMod {
+    background-color: yellow;
+    color: black;
+}
+
+.uvBackgroundLow {
+    background-color: rgb(0, 158, 0);
 }
 
 .forecast {
@@ -82,14 +109,40 @@
 }
 
 .card-body {
-    background-color: blue;
+    background: linear-gradient(rgb(232, 249, 255), rgb(4, 40, 65));
     font-family: 'Noto Sans', sans-serif;
     color: white;
     font-size: 11px;
 }
 
 .card-date {
-    font-size: 15px;
+    font-size: 20px;
+    color: rgb(4, 40, 65);
+}
+
+.card-temperature {
+    font-size: 14px;
+}
+
+.card-humidity {
+    font-size: 14px;
+}
+
+.background-img {
+    background-size: cover;
+}
+
+.footer {
+    background-color: rgb(4, 40, 65);
+    color: honeydew;
+}
+
+.forecast {
+    color: rgb(4, 40, 65);
+}
+
+.search-title-text {
+    color: rgb(4, 40, 65);
 }
 
 

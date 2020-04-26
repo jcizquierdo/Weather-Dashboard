@@ -24,7 +24,7 @@
                     </div>
                     <div class="search-line">
                         <input class="form-control mr-sm-2" type="text" placeholder="City Name" id="city-search-input">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="city-search-btn" onclick="getCity()">Search</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="city-search-btn" onclick="term()">Search</button>
                     </div>
                 </div>
                 <div class="search-history-display container" id="search-display">
@@ -32,13 +32,16 @@
                 </div>
             </div>
             <!-- right container -->
-            <div class="col-8">
-                <div class= "right-container">
-                    <div class="city-name">
-                        <!-- <img class="current-icon"></img> -->
+            <div class="col-8" style="background-color: rgb(232, 249, 255);">
+                <div class= "right-container" style="background-image: url('sky.jpg'); background-size: cover;">
+                    <!-- <img src ='sky.jpg' class="background-img"> -->
+                    <div class="city-name-container">
+                        <span class="city-name">
+                            <!-- <img class="current-icon"></img> -->
+                        </span>
+                        <img class="current-icon"></img>
+                        <span class="city-name-date"></span>
                     </div>
-                    <img class="current-icon"></img>
-                    <div class="city-name-date"></div>
                     <div class="city-info">
                         <div class="temp">
                             Temperature: <span id="temp2"></span>°F
@@ -68,7 +71,7 @@
                                         <div class= "card-date" id="forecast-date1">
 
                                         </div>
-                                        <span>icon</span>
+                                        <img class="card-icon1"></img>
                                         <div class="card-temperature">
                                             Temp: <span id="card-temp1"></span> °F
                                         </div>
@@ -84,7 +87,7 @@
                                         <div class= "card-date"id="forecast-date2">
 
                                         </div>
-                                        <span>icon</span>
+                                        <img class="card-icon2"></img>
                                         <div class="card-temperature">
                                             Temp: <span id="card-temp2"></span> °F
                                         </div>
@@ -100,7 +103,7 @@
                                         <div class= "card-date" id="forecast-date3">
 
                                         </div>
-                                        <span>icon</span>
+                                        <img class="card-icon3"></img>
                                         <div class="card-temperature">
                                             Temp: <span id="card-temp3"></span> °F
                                         </div>
@@ -116,7 +119,7 @@
                                         <div class= "card-date" id="forecast-date4">
 
                                         </div>
-                                        <span>icon</span>
+                                        <img class="card-icon4"></img>
                                         <div class="card-temperature">
                                             Temp: <span id="card-temp4"></span> °F
                                         </div>
@@ -132,7 +135,7 @@
                                         <div class= "card-date" id="forecast-date5">
 
                                         </div>
-                                        <span>icon</span>
+                                        <img class="card-icon5"></img>
                                         <div class="card-temperature">
                                             Temp: <span id="card-temp5"></span> °F
                                         </div>
@@ -150,6 +153,9 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        Made By JC Izquierdo
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
